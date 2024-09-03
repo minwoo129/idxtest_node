@@ -12,6 +12,7 @@ app.listen(port, () => {
 });
 
 app.get('/test', (req, res) => {
+  console.log('테스트')
   res.status(200).json({
     message: "send test"
   })
