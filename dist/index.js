@@ -13,4 +13,9 @@ var port = parseInt(process.env.PORT || '3000');
 app.listen(port, function () {
     console.log("listening on port ".concat(port));
 });
+app.get('/test', function (req, res) {
+    res.status(200).json({
+        message: "send test"
+    });
+});
 //# sourceMappingURL=index.js.map

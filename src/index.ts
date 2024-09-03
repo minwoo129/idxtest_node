@@ -10,3 +10,9 @@ const port = parseInt(process.env.PORT || '3000');
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
+
+app.get('/test', (req, res) => {
+  res.status(200).json({
+    message: "send test"
+  })
+})
